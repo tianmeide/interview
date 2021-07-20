@@ -36,9 +36,9 @@ public class LastKthNode {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LastKthNode ln = new LastKthNode();
-		Node head = new Node(7);
-		head.next = new Node(9);
-		int lastKth = 2;
+		Node head = new Node(1);
+		head.next = new Node(2);
+		int lastKth = 1;
 		ln.removeLastKthNode(head, lastKth);
 	}
 
