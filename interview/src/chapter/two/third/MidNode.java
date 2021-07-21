@@ -34,13 +34,23 @@ public class MidNode {
 			return head.next;
 		}
 		Node pre = head;
+		System.out.println("pre: " + pre.value);
 		Node cur = head.next.next;
+		System.out.println("cur: " +cur.value);
 		while (cur.next != null && cur.next.next != null) {
+			System.out.println("pre.next: " + pre.next.value);
 			pre = pre.next;
+			System.out.println("pre: " +pre.value);
+			System.out.println("cur.next.next: " + cur.next.next.value);
 			cur = cur.next.next;
+			
+			System.out.println("cur: " + cur.value);
 		}
+		System.out.println("pre.next.next: " + pre.next.next.value);
 		pre.next = pre.next.next;
-		System.out.println(pre.next);
+		//System.out.println(pre.next.value);
+		System.out.println("pre.next: " + pre.next.value);
+		System.out.println("head: " + head.value);
 		return head;
 	}
 	
@@ -72,6 +82,9 @@ public class MidNode {
 		MidNode mn = new MidNode();
 		Node head = new Node(1);
 		head.next = new Node(2);
+		head.next.next = new Node(3);
+		head.next.next.next = new Node(4);
+		head.next.next.next.next = new Node(5);
 		mn.removeMidNode(head);
 	}
 
