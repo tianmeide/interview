@@ -68,7 +68,7 @@ public class Conver1 {
 			System.out.print(end.value + " ");
 			end = end.left;
 		}
-		System.out.println();
+		System.out.println();    
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
